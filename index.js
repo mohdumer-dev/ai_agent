@@ -95,7 +95,7 @@ while (true) {
   message.push({ role: "user", content: JSON.stringify(q) });
   while (true) {
     const chat = await groq.chat.completions.create({
-      model: "llama3-8b-8192",
+      model:'llama3-8b-8192',
       messages: message,
       response_format: { type: "json_object" },
     });
